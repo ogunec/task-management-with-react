@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Screenshots
+![Task-Management!](/src/assets/1.png "index page")
+![Task-Management!](/src/assets/2.png "index page")
+![Task-Management!](/src/assets/3.png "index page")
+![Task-Management!](/src/assets/4.png "index page")
+
 ## Available Scripts
 
 In the project directory, you can run:
