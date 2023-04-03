@@ -17,7 +17,7 @@ function TaskItem({ task, onDelete, onUpdate }) {
         onUpdate(id, title, description)
     }
 
-    console.log(task)
+    
     return (
 
         <div className='task-item'>
