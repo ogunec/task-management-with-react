@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "../App.css"
+import TasksContext from '../context/task'
 
 
-function TaskCreate({ onCreate, task, taskStatus, onUpdate }) {
+function TaskCreate({ task, taskStatus, onUpdate }) {
+    const {createTask, editTaskById} = useContext(TasksContext)
     const [title, setTitle] = useState(task ? task.title : "")
     const [taskDesc, setTaskDesc] = useState(task ? task.taskDesc : "")
     const handleChange = (event) => {
@@ -17,7 +19,7 @@ function TaskCreate({ onCreate, task, taskStatus, onUpdate }) {
             onUpdate(task.id, title, taskDesc)
         }
         else{
-            onCreate(title, taskDesc)
+            createTask(title, taskDesc)
         }
     }
 
